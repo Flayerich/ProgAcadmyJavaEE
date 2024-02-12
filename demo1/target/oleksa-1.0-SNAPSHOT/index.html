@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="/ask" method="post">
+    <h1>Опитування</h1>
+    <div>
+        <p>1. Як ви відчуваєте себе сьогодні?</p>
+        <input type="radio" id="answer1a" name="answer1" value="Добре">
+        <label for="answer1a">Добре</label><br>
+        <input type="radio" id="answer1b" name="answer1" value="Погано">
+        <label for="answer1b">Погано</label><br>
+    </div>
+    <div>
+        <p>2. Яка ваша улюблена страва?</p>
+        <input type="radio" id="answer2a" name="answer2" value="Піцца">
+        <label for="answer2a">Піцца</label><br>
+        <input type="radio" id="answer2b" name="answer2" value="Тільки піцца">
+        <label for="answer2b">Тільки піцца</label><br>
+    </div>
+    <button type="submit">Надіслати</button>
+</form>
+</body>
+</html>
